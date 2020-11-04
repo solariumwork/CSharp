@@ -11,12 +11,7 @@
 
         static float Min(float a, float b)
         {
-            if (a < b)
-            {
-                return a;
-            }
-
-            return b;
+            return (a < b) ? a : b;
         }
         
         private static void Main(string[] args)
