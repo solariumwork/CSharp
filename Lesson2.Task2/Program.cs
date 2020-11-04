@@ -1,4 +1,6 @@
-﻿namespace Lesson2.Task2
+﻿using System.Linq;
+
+namespace Lesson2.Task2
 {
     using System;
     
@@ -6,13 +8,12 @@
     {
         static int NumsCount(float num)
         {
-            string numString = num.ToString();
-            if (numString.Contains(","))
-            {
-                return numString.Length - 1;
-            }
+            return FilterNums(num.ToString()).Length;
+        }
 
-            return numString.Length;
+        static string FilterNums(string str)
+        {
+            return string.Concat(str.Where(Char.IsDigit));
         }
         
         private static void Main(string[] args)
