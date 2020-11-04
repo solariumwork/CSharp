@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Lesson2.Task2
+﻿namespace Lesson2.Task2
 {
+    using System;
+    
     static class Program
     {
         static int NumsCount(float num)
