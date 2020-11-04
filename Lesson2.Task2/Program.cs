@@ -6,7 +6,7 @@ namespace Lesson2.Task2
     
     static class Program
     {
-        static int NumsCount(float num)
+        static int NumsCount(decimal num)
         {
             return FilterNums(num.ToString()).Length;
         }
@@ -19,7 +19,7 @@ namespace Lesson2.Task2
         private static void Main(string[] args)
         {
             Console.WriteLine("Введите число");
-            float num = Convert.ToSingle(Console.ReadLine());
+            decimal num = Convert.ToDecimal(Console.ReadLine());
 
             Console.WriteLine($"Количество цифр в числе: { NumsCount(num) }");
         }
