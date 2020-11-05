@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using Microsoft.VisualBasic;
 
-namespace Lesson2.Task4.Auth
+namespace Lesson2.Auth
 {
-    public static class AuthService
+    public class AuthService
     {
         private const string LOGIN = "root";
         private const string PASSWORD = "GeekBrains";
         
-        public static string Login(string login, string password)
+        public string Login(string login, string password)
         {
             if (login == "")
             {
