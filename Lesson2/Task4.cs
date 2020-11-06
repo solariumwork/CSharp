@@ -32,7 +32,7 @@ namespace Lesson2
                     Console.WriteLine($"\nОшибка: {error}");
                 }
                 
-                Console.WriteLine("");
+                Console.WriteLine();
             } while (error != "");
             
             Console.WriteLine("Вы успешно авторизовались");
