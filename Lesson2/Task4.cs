@@ -3,7 +3,7 @@ using Lesson2.Auth;
 
 namespace Lesson2
 {
-    public class Task4
+    public class Task4: TaskInterface
     {
         private View View { get; }
         private AuthService AuthService { get; }

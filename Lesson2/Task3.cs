@@ -2,7 +2,7 @@ using System;
 
 namespace Lesson2
 {
-    public class Task3
+    public class Task3: TaskInterface
     {
         private View View { get; }
         public Task3(View view)

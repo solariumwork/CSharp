@@ -11,26 +11,25 @@ namespace Lesson2
         {
             View view = new View();
 
-            Task1 task1 = new Task1(view);
-            do
-            {
-                task1.Execute();
-            } while (view.GetKey(TO_NEXT_TASK_MESSAGE) != ConsoleKey.Enter);
+            ExecuteTask(new Task1(view));
+            ExecuteTask(new Task2(view));
+            ExecuteTask(new Task3(view));
+            ExecuteTask(new Task4(view, new AuthService()), true);
+        }
 
-            Task2 task2 = new Task2(view);
-            do
+        static void ExecuteTask(TaskInterface task, bool isLastTask = false)
+        {
+            if (isLastTask)
             {
-                task2.Execute();
-            } while (view.GetKey(TO_NEXT_TASK_MESSAGE) != ConsoleKey.Enter);
-
-            Task3 task3 = new Task3(view);
-            do
-            {
-                task3.Execute();
-            } while (view.GetKey(TO_NEXT_TASK_MESSAGE) != ConsoleKey.Enter);
+                task.Execute();
+                return;
+            }
             
-            Task4 task4 = new Task4(view, new AuthService());
-            task4.Execute();
+            do
+            {
+                task.Execute();
+                Console.WriteLine(TO_NEXT_TASK_MESSAGE);
+            } while (Console.ReadKey().Key != ConsoleKey.Enter);
         }
     }
 }

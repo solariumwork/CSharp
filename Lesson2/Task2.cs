@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Lesson2
 {
-    public class Task2
+    public class Task2: TaskInterface
     {
         private View View { get; }
         public Task2(View view)
