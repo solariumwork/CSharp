@@ -1,6 +1,6 @@
 namespace Lesson2
 {
-    public interface TaskInterface
+    public interface ITask
     {
         public void Execute();
     }

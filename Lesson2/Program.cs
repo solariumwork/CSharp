@@ -17,7 +17,7 @@ namespace Lesson2
             ExecuteTask(new Task4(view, new AuthService()), true);
         }
 
-        static void ExecuteTask(TaskInterface task, bool isLastTask = false)
+        static void ExecuteTask(ITask task, bool isLastTask = false)
         {
             if (isLastTask)
             {
