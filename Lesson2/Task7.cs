@@ -14,6 +14,7 @@ namespace Lesson2
         public void Execute()
         {
             Console.WriteLine("Задача 7: Рекурсивно вывысти числа от a до b (a < b)");
+            Console.WriteLine("(б) Рекурсивно вывести сумму чисел от a до b (a < b)");
 
             int a;
             int b;
