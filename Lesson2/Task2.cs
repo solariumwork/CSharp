@@ -13,8 +13,6 @@ namespace Lesson2
         
         public void Execute()
         {
-            Console.Clear();
-            
             Console.WriteLine("Задача 2: Подсчёт количества цифр в числе\n");
             
             decimal num = View.GetDecimal("Введите число");

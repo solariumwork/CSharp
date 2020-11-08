@@ -11,8 +11,6 @@ namespace Lesson2
         }
         public void Execute()
         {
-            Console.Clear();
-            
             Console.WriteLine("Задача 1: Поиск минимального числа из 3 чисел\n");
             
             float a = View.GetFloat("Введите первое число");

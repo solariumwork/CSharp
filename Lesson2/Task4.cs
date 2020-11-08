@@ -15,7 +15,6 @@ namespace Lesson2
         
         public void Execute()
         {
-            Console.Clear();
             Console.WriteLine("Задача 4: Проверка логина и пароля\n");
             Console.WriteLine("Правильный логин: root\n");
             Console.WriteLine("Правильный пароль: GeekBrains\n");

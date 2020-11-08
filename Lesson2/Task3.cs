@@ -12,8 +12,6 @@ namespace Lesson2
         
         public void Execute()
         {
-            Console.Clear();
-            
             Console.WriteLine("Задача 3: Подсчёт cуммы нечётных положительных чисел\n");
             
             int sum = 0;

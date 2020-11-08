@@ -16,7 +16,6 @@ namespace Lesson2
         
         public void Execute()
         {
-            Console.Clear();
             Console.WriteLine("Задача 5: Вычислить индекс массы, рассчитать насколько нужно похудеть или набрать веса\n");
             
             int height = View.GetInt("Введите рост (см)");
