@@ -12,6 +12,16 @@ namespace Lesson2
 
             return result;
         }
+        
+        public int GetInt(string str)
+        {
+            int result;
+            do {
+                Console.WriteLine(str);
+            } while (!Int32.TryParse(Console.ReadLine(), out result));
+
+            return result;
+        }
 
         public ConsoleKey GetKey(string str)
         {
