@@ -4,18 +4,6 @@ namespace Lesson2
 {
     public class Task6 : ITask
     {
-        private int SumDigit(int num)
-        {
-            int sum = 0;
-            do
-            {
-                sum += num % 10;
-                num /= 10;
-            } while (num > 0);
-
-            return sum;
-        }
-
         public void Execute()
         {
             Console.WriteLine("Задача 6: Посчитать количество хороших символов. Посчитать время исполнения программы");
@@ -36,6 +24,18 @@ namespace Lesson2
 
             TimeSpan executeTime = timer.Stop();
             Console.WriteLine($"Время исполнения программы: \nсекунд: {executeTime.Seconds} \nмиллисекунд: {executeTime.Milliseconds}");
+        }
+        
+        private int SumDigit(int num)
+        {
+            int sum = 0;
+            do
+            {
+                sum += num % 10;
+                num /= 10;
+            } while (num > 0);
+
+            return sum;
         }
     }
 }

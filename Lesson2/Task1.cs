@@ -5,10 +5,12 @@ namespace Lesson2
     public class Task1: ITask
     {
         private View View { get; }
+        
         public Task1(View view)
         {
             View = view;
         }
+        
         public void Execute()
         {
             Console.WriteLine("Задача 1: Поиск минимального числа из 3 чисел\n");

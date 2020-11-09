@@ -5,6 +5,7 @@ namespace Lesson2
     public class Task3: ITask
     {
         private View View { get; }
+        
         public Task3(View view)
         {
             View = view;
