@@ -1,4 +1,6 @@
 ﻿using System;
+using ViewModule;
+
 namespace Lesson3
 {
     class Program

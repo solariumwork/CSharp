@@ -1,6 +1,6 @@
 using System;
 
-namespace Lesson3
+namespace ViewModule
 {
     public class ConsoleView: IView
     {

@@ -5,4 +5,10 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Reference Include="ViewModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\libraries\CSharpLibrary\ViewModule\bin\Debug\netcoreapp3.1\ViewModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

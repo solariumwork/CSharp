@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace Lesson3
+namespace ViewModule
 {
     public interface IView
     {
