@@ -2,13 +2,19 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>netcoreapp5.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
       <Reference Include="ViewModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\libraries\CSharpLibrary\ViewModule\bin\Debug\netcoreapp3.1\ViewModule.dll</HintPath>
+        <HintPath>..\..\CSharpLibrary\ViewModule\bin\Debug\netcoreapp3.1\ViewModule.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="resources\accounts.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

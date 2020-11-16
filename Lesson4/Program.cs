@@ -1,4 +1,5 @@
 ﻿using System;
+using Lesson4.Auth;
 using ViewModule;
 
 namespace Lesson4
@@ -16,6 +17,9 @@ namespace Lesson4
                 {
                     case ConsoleKey.D1:
                         ExecuteTask(new Task1(view, new Random()));
+                        break;
+                    case ConsoleKey.D3:
+                        ExecuteTask(new Task3(view, new AuthService()));
                         break;
                 }
             } while (key != ConsoleKey.D0);
