@@ -13,7 +13,7 @@ namespace Lesson4
             ConsoleKey key;
             do
             {
-                switch (key = view.GetKey("Введите номер задачи от 1 до 4, 0 - закончить"))
+                switch (key = view.GetKey("Введите номер задачи 1 или 3, 0 - закончить"))
                 {
                     case ConsoleKey.D1:
                         ExecuteTask(new Task1(view, new Random()));
